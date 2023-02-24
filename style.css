@@ -24,7 +24,10 @@
 .titulo{
   padding: 20px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(190, 169, 115);
+  border-top: 1px solid rgb(66, 66, 66);
+  font-style: normal;
 }
 
 .paragrafo{
@@ -70,7 +73,6 @@
   font-size: 15px;
   margin: 25px;
   color: rgb(224, 184, 82);
-  border-bottom: 1px solid darkgray;
 }
 
 .paragrafodesenho{
@@ -89,6 +91,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
 }
 
 .desenhos{
@@ -106,9 +109,9 @@
   justify-content: space-between;
   align-items: center;
   transition: 1.0s;
-  box-shadow:  1px 1px 40px rgb(73, 73, 72);
+  box-shadow:  1px 1px 40px rgb(95, 95, 95);
   animation: ease-in;
-  border-radius: 7px;
+  border-radius: 10px;
 }
 
 .desenho:hover{
