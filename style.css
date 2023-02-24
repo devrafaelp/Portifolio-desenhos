@@ -21,12 +21,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
-.main-content{
-  padding: 1px;
-  background-color: darkgrey;
-}
-
 .titulo{
   padding: 20px;
   text-align: center;
@@ -35,6 +29,7 @@
 
 .paragrafo{
   text-align: center;
+  padding: 20px;
 }
 
 .logorp{
@@ -60,12 +55,84 @@
   background-color: transparent;
   border-radius: 2px;
   border: none;
-  color: darkgray;
+  color: darkgrey;
   cursor: pointer;
-  transition: 0.6s;
+  transition: 1.2s;
 
 }
 .botao:hover{
   color: rgb(228, 181, 63);
-  border-bottom: 2px double rgb(228, 181, 63);
+}
+
+.tituloDesenho{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin: 25px;
+  color: rgb(224, 184, 82);
+  border-bottom: 1px solid darkgray;
+}
+
+.paragrafodesenho{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkgrey;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.containerdesenhos{
+  background-color: transparent;
+  max-width: 100%;
+  padding: 130px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.desenhos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desenho{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1.0s;
+  box-shadow:  1px 1px 40px rgb(73, 73, 72);
+  animation: ease-in;
+  border-radius: 7px;
+}
+
+.desenho:hover{
+  border: 1px solid rgb(228, 181, 63);
+}
+
+.desenho {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-trim: 40%;
+    width: 150px
+  }
+
+  to {
+    margin-left: 0%;
+    width: 200px;
+  }
+}
+
+.footerparagrafo{
+  margin: 5px;
+  text-align: center;
 }
